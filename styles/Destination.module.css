@@ -1,0 +1,101 @@
+.content {
+    padding-top: 8rem;
+    background: url(../public/assets/destination/background-destination-mobile.jpg);
+    background-size: 100% 100%;
+    margin: 0;
+}
+
+.image {
+    min-width: 200px !important;
+    min-height: 200px !important;
+    margin: 0 auto;
+}
+
+.destination_nav {
+    color: var( --color2 );
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.destination_nav li {
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.destination_nav li:hover {
+    border-bottom: 3px solid var( --color2 )
+}
+
+.title_destination {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.destination_description {
+    color: var( --color2 ) !important;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var( --color2 );
+    font-size: 1.7rem;
+}
+
+.text_info {
+    font-size: 2.6rem;
+}
+
+.text_infoo {
+    font-size: 1.7rem;
+}
+
+.nav-item{
+    
+}
+
+@media(min-width: 500px) {
+    .content {
+        background: url(../public/assets/destination/background-destination-tablet.jpg);
+    }
+}
+
+@media(min-width: 768px) {
+    .image {
+        min-width: 350px !important;
+        min-height: 350px !important;
+    }
+    
+
+    .text_info {
+        font-size: 2.3rem;
+    }
+    
+    .text_infoo {
+        font-size: 1.3rem;
+    }
+
+    .destination_description {
+        font-size: 1.3rem;
+    }
+    
+}
+
+@media(min-width: 992px) {
+    .destination_nav {
+        font-size: 1rem;
+        justify-content: flex-start;
+    }
+    .content {
+        background: url(../public/assets/destination/background-destination-desktop.jpg);
+        height: 100%;
+    }
+    .destination_nav {
+        margin-top: 0;
+    }
+}
+
+@media(min-width: 1500px) {
+    .content {
+        height: 100vh;
+    }
+}
